@@ -47,8 +47,6 @@ for path in csv_files:
 ```python
 #print the contents of the file, write the contents in file
 path = "c:\\data\\output.csv"
-#The way Python handles newlines on Windows can result in blank lines appearing between rows when using csv.writer
-# Python 2, opening the file in binary mode disables universal newlines, Python 3, disable universal newlines
 with open(path, 'w', newline='') as outfile:
     writer = csv.writer(outfile)
     writer.writerow(["Owner", "Scripts", "Quantity"])
