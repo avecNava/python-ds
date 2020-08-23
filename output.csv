@@ -1,0 +1,283 @@
+Owner,Scripts,Quantity
+User1 - Copy,JOSHI,10.0
+User1 - Copy,NMB,15.0
+User1 - Copy,RRHP,10.0
+User1 - Copy,UPPER,40.0
+User1,JOSHI,10.0
+User1,NMB,15.0
+User1,RRHP,10.0
+User1,UPPER,40.0
+User2 - Copy,BPCL,24.0
+User2 - Copy,GBLBS,15.0
+User2 - Copy,HPPL,10.0
+User2 - Copy,JOSHI,20.0
+User2 - Copy,NIB,49.0
+User2 - Copy,NLIC,22.0
+User2 - Copy,NMB,15.0
+User2 - Copy,NRIC,10.0
+User2 - Copy,PFL,14.0
+User2 - Copy,RRHP,10.0
+User2 - Copy,SCB,20.0
+User2 - Copy,UPPER,40.0
+User2,BPCL,24.0
+User2,GBLBS,15.0
+User2,HPPL,10.0
+User2,JOSHI,20.0
+User2,NIB,49.0
+User2,NLIC,22.0
+User2,NMB,15.0
+User2,NRIC,10.0
+User2,PFL,14.0
+User2,RRHP,10.0
+User2,SCB,20.0
+User2,UPPER,40.0
+User3 - Copy,AKJCL,20.0
+User3 - Copy,BPCL,24.0
+User3 - Copy,CZBIL,10.0
+User3 - Copy,FMDBL,174.0
+User3 - Copy,GBLBS,15.0
+User3 - Copy,GMFBS,10.0
+User3 - Copy,HPPL,10.0
+User3 - Copy,ILBS,11.0
+User3 - Copy,JOSHI,20.0
+User3 - Copy,NHDL,10.0
+User3 - Copy,NIB,49.0
+User3 - Copy,NLIC,22.0
+User3 - Copy,NMB,15.0
+User3 - Copy,PFL,14.0
+User3 - Copy,RADHI,12.0
+User3 - Copy,RHPL,40.0
+User3 - Copy,SCB,20.0
+User3 - Copy,SICL,10.0
+User3 - Copy,SJCL,20.0
+User3 - Copy,TJVCL,20.0
+User3 - Copy,UPPER,50.0
+User3,AKJCL,20.0
+User3,BPCL,24.0
+User3,CZBIL,10.0
+User3,FMDBL,174.0
+User3,GBLBS,15.0
+User3,GMFBS,10.0
+User3,HPPL,10.0
+User3,ILBS,11.0
+User3,JOSHI,20.0
+User3,NHDL,10.0
+User3,NIB,49.0
+User3,NLIC,22.0
+User3,NMB,15.0
+User3,PFL,14.0
+User3,RADHI,12.0
+User3,RHPL,40.0
+User3,SCB,20.0
+User3,SICL,10.0
+User3,SJCL,20.0
+User3,TJVCL,20.0
+User3,UPPER,50.0
+User4 - Copy,AKJCL,20.0
+User4 - Copy,AKPL,197.0
+User4 - Copy,API,381.0
+User4 - Copy,CBBL,19.0
+User4 - Copy,CHCL,59.0
+User4 - Copy,CZBIL,3.0
+User4 - Copy,DDBL,71.0
+User4 - Copy,EBL,37.0
+User4 - Copy,GHL,30.0
+User4 - Copy,HBL,11.0
+User4 - Copy,HDHPC,100.0
+User4 - Copy,HPPL,10.0
+User4 - Copy,JOSHI,20.0
+User4 - Copy,LBL,24.0
+User4 - Copy,LICN,1.0
+User4 - Copy,MDB,43.0
+User4 - Copy,NABIL,79.0
+User4 - Copy,NIBPO,277.0
+User4 - Copy,NICA,3.0
+User4 - Copy,NMFBS,7.0
+User4 - Copy,NRIC,50.0
+User4 - Copy,PFL,14.0
+User4 - Copy,RHPL,50.0
+User4 - Copy,RRHP,10.0
+User4 - Copy,SADBL,10.0
+User4 - Copy,SANIMA,1.0
+User4 - Copy,SBL,22.0
+User4 - Copy,SHIVM,100.0
+User4 - Copy,SICL,8.0
+User4 - Copy,SJCL,20.0
+User4 - Copy,TJVCL,20.0
+User4 - Copy,UNHPL,50.0
+User4 - Copy,UPPER,40.0
+User4 - Copy,VLBS,13.0
+User4,AKJCL,20.0
+User4,AKPL,197.0
+User4,API,381.0
+User4,CBBL,19.0
+User4,CHCL,59.0
+User4,CZBIL,3.0
+User4,DDBL,71.0
+User4,EBL,37.0
+User4,GHL,30.0
+User4,HBL,11.0
+User4,HDHPC,100.0
+User4,HPPL,10.0
+User4,JOSHI,20.0
+User4,LBL,24.0
+User4,LICN,1.0
+User4,MDB,43.0
+User4,NABIL,79.0
+User4,NIBPO,277.0
+User4,NICA,3.0
+User4,NMFBS,7.0
+User4,NRIC,50.0
+User4,PFL,14.0
+User4,RHPL,50.0
+User4,RRHP,10.0
+User4,SADBL,10.0
+User4,SANIMA,1.0
+User4,SBL,22.0
+User4,SHIVM,100.0
+User4,SICL,8.0
+User4,SJCL,20.0
+User4,TJVCL,20.0
+User4,UNHPL,50.0
+User4,UPPER,40.0
+User4,VLBS,13.0
+User5 - Copy,AKBSL,10.0
+User5 - Copy,BPCL,24.0
+User5 - Copy,JOSHI,20.0
+User5 - Copy,NMB,15.0
+User5 - Copy,PIC,11.0
+User5 - Copy,RHPL,10.0
+User5 - Copy,SJCL,10.0
+User5,AKBSL,10.0
+User5,BPCL,24.0
+User5,JOSHI,20.0
+User5,NMB,15.0
+User5,PIC,11.0
+User5,RHPL,10.0
+User5,SJCL,10.0
+User6 - Copy,BPCL,24.0
+User6 - Copy,HPPL,20.0
+User6 - Copy,JOSHI,20.0
+User6 - Copy,NHDL,10.0
+User6 - Copy,NIB,49.0
+User6 - Copy,NLIC,22.0
+User6 - Copy,NMB,15.0
+User6 - Copy,PFL,14.0
+User6 - Copy,SCB,20.0
+User6 - Copy,UPPER,50.0
+User6,BPCL,24.0
+User6,HPPL,20.0
+User6,JOSHI,20.0
+User6,NHDL,10.0
+User6,NIB,49.0
+User6,NLIC,22.0
+User6,NMB,15.0
+User6,PFL,14.0
+User6,SCB,20.0
+User6,UPPER,50.0
+User7 - Copy,AKBSL,10.0
+User7 - Copy,BPCL,24.0
+User7 - Copy,HPPL,10.0
+User7 - Copy,ILBS,11.0
+User7 - Copy,NIB,49.0
+User7 - Copy,PFL,14.0
+User7 - Copy,SCB,20.0
+User7 - Copy,SDLBSL,10.0
+User7 - Copy,UMHL,10.0
+User7,AKBSL,10.0
+User7,BPCL,24.0
+User7,HPPL,10.0
+User7,ILBS,11.0
+User7,NIB,49.0
+User7,PFL,14.0
+User7,SCB,20.0
+User7,SDLBSL,10.0
+User7,UMHL,10.0
+User8 - Copy,AKJCL,20.0
+User8 - Copy,BPCL,24.0
+User8 - Copy,CZBIL,10.0
+User8 - Copy,FMDBL,174.0
+User8 - Copy,GBLBS,15.0
+User8 - Copy,GMFBS,10.0
+User8 - Copy,HPPL,10.0
+User8 - Copy,ILBS,11.0
+User8 - Copy,JOSHI,20.0
+User8 - Copy,NHDL,10.0
+User8 - Copy,NIB,49.0
+User8 - Copy,NLIC,22.0
+User8 - Copy,NMB,15.0
+User8 - Copy,PFL,14.0
+User8 - Copy,RADHI,12.0
+User8 - Copy,RHPL,40.0
+User8 - Copy,SCB,20.0
+User8 - Copy,SICL,10.0
+User8 - Copy,SJCL,20.0
+User8 - Copy,TJVCL,20.0
+User8 - Copy,UPPER,50.0
+User8,AKJCL,20.0
+User8,BPCL,24.0
+User8,CZBIL,10.0
+User8,FMDBL,174.0
+User8,GBLBS,15.0
+User8,GMFBS,10.0
+User8,HPPL,10.0
+User8,ILBS,11.0
+User8,JOSHI,20.0
+User8,NHDL,10.0
+User8,NIB,49.0
+User8,NLIC,22.0
+User8,NMB,15.0
+User8,PFL,14.0
+User8,RADHI,12.0
+User8,RHPL,40.0
+User8,SCB,20.0
+User8,SICL,10.0
+User8,SJCL,20.0
+User8,TJVCL,20.0
+User8,UPPER,50.0
+User9 - Copy,AKJCL,10.0
+User9 - Copy,BPCL,24.0
+User9 - Copy,CZBIL,10.0
+User9 - Copy,FMDBL,174.0
+User9 - Copy,GBLBS,15.0
+User9 - Copy,HPPL,10.0
+User9 - Copy,JOSHI,20.0
+User9 - Copy,NIB,49.0
+User9 - Copy,NLIC,22.0
+User9 - Copy,NMB,15.0
+User9 - Copy,NRIC,40.0
+User9 - Copy,PFL,14.0
+User9 - Copy,PIC,11.0
+User9 - Copy,RADHI,12.0
+User9 - Copy,RBCL,11.0
+User9 - Copy,RHPL,30.0
+User9 - Copy,RRHP,10.0
+User9 - Copy,SBI,24.0
+User9 - Copy,SCB,20.0
+User9 - Copy,SICL,10.0
+User9 - Copy,SJCL,20.0
+User9 - Copy,TJVCL,20.0
+User9 - Copy,UPPER,50.0
+User9,AKJCL,10.0
+User9,BPCL,24.0
+User9,CZBIL,10.0
+User9,FMDBL,174.0
+User9,GBLBS,15.0
+User9,HPPL,10.0
+User9,JOSHI,20.0
+User9,NIB,49.0
+User9,NLIC,22.0
+User9,NMB,15.0
+User9,NRIC,40.0
+User9,PFL,14.0
+User9,PIC,11.0
+User9,RADHI,12.0
+User9,RBCL,11.0
+User9,RHPL,30.0
+User9,RRHP,10.0
+User9,SBI,24.0
+User9,SCB,20.0
+User9,SICL,10.0
+User9,SJCL,20.0
+User9,TJVCL,20.0
+User9,UPPER,50.0
