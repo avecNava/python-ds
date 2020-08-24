@@ -4,7 +4,38 @@
 
 24 Aug 2020
 
-## 1. Import required header files
+## Objective
+
+To read multiple similiar CSV files in a given directory and append the contents in a single file.
+
+## Introduction
+
+The CSV files are exported from *My Shares* on [meroshare][2] . The file contains stock details for the given user.
+
+The exported files are named on the basis of owner of the scripts. The output file contains a new column called *owner* which will be the file name.
+
+## Sample CSV file structure
+
+| S.N. | Script | Current Balance | Pledge Balance | Locking Balance| Freeze Balance | Free Balance | Demat Pending | Remarks |
+| ---: | --- | ---: | ---: |---: |---: |---: |---: |--- |
+| 1 | JOSHI | 10 | 0 | 0 | 0 | 10 | 0 | |
+| 2 | NMB | 10 | 0 | 0 | 0 | 10 | 0 | |
+| 3 | RRHP | 10 | 0 | 0 | 0 | 10 | 0 | |
+| 4 | UPPER | 10 | 0 | 0 | 0 | 10 | 0 | |
+| 5 | NLICL | 10 | 0 | 0 | 0 | 10 | 0 | |
+
+## Sample output
+
+|Owner | Scripts | Quantity |
+| --- | --- | ---: |
+| User 1 | JOSHI | 10 |
+| User 1 | NMB |  15 |
+| User 2 | RRHP | 10 |
+| User 2 | UPPER | 40 |
+
+<br>
+
+## 1. Import libraries
 
 ```python
 import os
@@ -55,3 +86,26 @@ with open(path, 'w', newline='') as outfile:
         print(row)
 
 ```
+
+## Note on newlines
+
+From [sopython.com][1]
+
+The way Python handles newlines on Windows can result in blank lines appearing between rows when using csv.writer.
+
+In Python 2, opening the file in binary mode disables universal newlines and the data is written properly.
+
+```python
+with open('/pythonwork/thefile_subset11.csv', 'wb') as outfile:
+    writer = csv.writer(outfile)
+```
+
+In Python 3, leave the file in text mode, since you’re writing text, but disable universal newlines.
+
+```python
+with open('/pythonwork/thefile_subset11.csv', 'w', newline='') as outfile:
+    writer = csv.writer(outfile)
+```
+
+[1]: https://sopython.com/canon/97/writing-csv-adds-blank-lines-between-rows
+[2]: https://meroshare.com.np
