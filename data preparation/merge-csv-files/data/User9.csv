@@ -1,24 +1,142 @@
-"S.N","Scrip","Current Balance","Pledge Balance","Locking Balance","Freeze Balance","Free Balance","Demat Pending","Remarks"
-"1","AKJCL","10.0","0.0","0.0","0.0","10.0","0.0"," "
-"2","BPCL","24.0","0.0","0.0","0.0","24.0","0.0"," "
-"3","CZBIL","10.0","0.0","0.0","0.0","10.0","0.0"," "
-"4","FMDBL","174.0","0.0","0.0","0.0","174.0","0.0"," "
-"5","GBLBS","15.0","0.0","0.0","0.0","15.0","0.0"," "
-"6","HPPL","10.0","0.0","0.0","0.0","10.0","0.0"," "
-"7","JOSHI","20.0","0.0","0.0","0.0","20.0","0.0"," "
-"8","NIB","49.0","0.0","0.0","0.0","49.0","0.0"," "
-"9","NLIC","22.0","0.0","0.0","0.0","22.0","0.0"," "
-"10","NMB","15.0","0.0","0.0","0.0","15.0","0.0"," "
-"11","NRIC","40.0","0.0","0.0","0.0","40.0","0.0"," "
-"12","PFL","14.0","0.0","0.0","0.0","14.0","0.0"," "
-"13","PIC","11.0","0.0","0.0","0.0","11.0","0.0"," "
-"14","RADHI","12.0","0.0","0.0","0.0","12.0","0.0"," "
-"15","RBCL","11.0","0.0","0.0","0.0","11.0","0.0"," "
-"16","RHPL","30.0","0.0","0.0","0.0","30.0","0.0"," "
-"17","RRHP","10.0","0.0","0.0","0.0","10.0","0.0"," "
-"18","SBI","24.0","0.0","0.0","0.0","24.0","0.0"," "
-"19","SCB","20.0","0.0","0.0","0.0","20.0","0.0"," "
-"20","SICL","10.0","0.0","0.0","0.0","10.0","0.0"," "
-"21","SJCL","20.0","0.0","0.0","0.0","20.0","0.0"," "
-"22","TJVCL","20.0","0.0","0.0","0.0","20.0","0.0"," "
-"23","UPPER","50.0","0.0","0.0","0.0","50.0","0.0"," "
+Owner,Scripts,Quantity
+User1,JOSHI,10.0
+User1,NMB,15.0
+User1,RRHP,10.0
+User1,UPPER,40.0
+User2,BPCL,24.0
+User2,GBLBS,15.0
+User2,HPPL,10.0
+User2,JOSHI,20.0
+User2,NIB,49.0
+User2,NLIC,22.0
+User2,NMB,15.0
+User2,NRIC,10.0
+User2,PFL,14.0
+User2,RRHP,10.0
+User2,SCB,20.0
+User2,UPPER,40.0
+User3,AKJCL,20.0
+User3,BPCL,24.0
+User3,CZBIL,10.0
+User3,FMDBL,174.0
+User3,GBLBS,15.0
+User3,GMFBS,10.0
+User3,HPPL,10.0
+User3,ILBS,11.0
+User3,JOSHI,20.0
+User3,NHDL,10.0
+User3,NIB,49.0
+User3,NLIC,22.0
+User3,NMB,15.0
+User3,PFL,14.0
+User3,RADHI,12.0
+User3,RHPL,40.0
+User3,SCB,20.0
+User3,SICL,10.0
+User3,SJCL,20.0
+User3,TJVCL,20.0
+User3,UPPER,50.0
+User4,AKJCL,20.0
+User4,AKPL,197.0
+User4,API,381.0
+User4,CBBL,19.0
+User4,CHCL,59.0
+User4,CZBIL,3.0
+User4,DDBL,71.0
+User4,EBL,37.0
+User4,GHL,30.0
+User4,HBL,11.0
+User4,HDHPC,100.0
+User4,HPPL,10.0
+User4,JOSHI,20.0
+User4,LBL,24.0
+User4,LICN,1.0
+User4,MDB,43.0
+User4,NABIL,79.0
+User4,NIBPO,277.0
+User4,NICA,3.0
+User4,NMFBS,7.0
+User4,NRIC,50.0
+User4,PFL,14.0
+User4,RHPL,50.0
+User4,RRHP,10.0
+User4,SADBL,10.0
+User4,SANIMA,1.0
+User4,SBL,22.0
+User4,SHIVM,100.0
+User4,SICL,8.0
+User4,SJCL,20.0
+User4,TJVCL,20.0
+User4,UNHPL,50.0
+User4,UPPER,40.0
+User4,VLBS,13.0
+User5,AKBSL,10.0
+User5,BPCL,24.0
+User5,JOSHI,20.0
+User5,NMB,15.0
+User5,PIC,11.0
+User5,RHPL,10.0
+User5,SJCL,10.0
+User6,BPCL,24.0
+User6,HPPL,20.0
+User6,JOSHI,20.0
+User6,NHDL,10.0
+User6,NIB,49.0
+User6,NLIC,22.0
+User6,NMB,15.0
+User6,PFL,14.0
+User6,SCB,20.0
+User6,UPPER,50.0
+User7,AKBSL,10.0
+User7,BPCL,24.0
+User7,HPPL,10.0
+User7,ILBS,11.0
+User7,NIB,49.0
+User7,PFL,14.0
+User7,SCB,20.0
+User7,SDLBSL,10.0
+User7,UMHL,10.0
+User8,AKJCL,20.0
+User8,BPCL,24.0
+User8,CZBIL,10.0
+User8,FMDBL,174.0
+User8,GBLBS,15.0
+User8,GMFBS,10.0
+User8,HPPL,10.0
+User8,ILBS,11.0
+User8,JOSHI,20.0
+User8,NHDL,10.0
+User8,NIB,49.0
+User8,NLIC,22.0
+User8,NMB,15.0
+User8,PFL,14.0
+User8,RADHI,12.0
+User8,RHPL,40.0
+User8,SCB,20.0
+User8,SICL,10.0
+User8,SJCL,20.0
+User8,TJVCL,20.0
+User8,UPPER,50.0
+User9,AKJCL,10.0
+User9,BPCL,24.0
+User9,CZBIL,10.0
+User9,FMDBL,174.0
+User9,GBLBS,15.0
+User9,HPPL,10.0
+User9,JOSHI,20.0
+User9,NIB,49.0
+User9,NLIC,22.0
+User9,NMB,15.0
+User9,NRIC,40.0
+User9,PFL,14.0
+User9,PIC,11.0
+User9,RADHI,12.0
+User9,RBCL,11.0
+User9,RHPL,30.0
+User9,RRHP,10.0
+User9,SBI,24.0
+User9,SCB,20.0
+User9,SICL,10.0
+User9,SJCL,20.0
+User9,TJVCL,20.0
+User9,UPPER,50.0
