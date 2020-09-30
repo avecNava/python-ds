@@ -8,6 +8,8 @@ import csv
 csv_files = []
 #1. get the list of csv files in the given directory
 path = os.path.join("c:\\","code\\python ds\\data preparation\\stock-portfolio")
+# path = os.path.join("d:\\","OneDrive\\nbogatee\OneDrive - United Nations\\nepse.today\\nava-portfolio")
+
 path_to_data = os.path.join(path,"data")
 
 for root, dirs, files in os.walk(path_to_data):

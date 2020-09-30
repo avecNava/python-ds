@@ -1,0 +1,99 @@
+/************************************************************************************
+NAV
+*************************************************************************************/
+/* menu icon */
+#menu-icon {
+	display: none; /* hide menu icon initially */
+}
+/************************************************************************************
+MOBILE
+*************************************************************************************/
+@media screen and (max-width: 768px) {
+
+	/* nav-wrap */
+	#nav-wrap {
+		position: relative;
+		width:175px;
+	}
+
+	/* menu icon */
+	#menu-icon {
+		float:right;
+		color: #fff;
+		width: 42px;
+		height: 30px;
+		background: #b15538 url(../images/menu-icon.png) no-repeat 10px center;
+		padding: 8px 10px 0 42px;
+		cursor: pointer;
+		display: block; /* show menu icon */
+		margin-top:30px;
+	}
+	#menu-icon:hover {
+		background-color: #934127;
+	}
+	#menu-icon.active {
+		background-color: #5d4955;
+	}
+	
+	/* main nav */
+	#nav {
+		clear: both;
+		position: absolute;
+		top: 68px;
+		width: 175px;
+		z-index: 10000;
+		/*padding: 5px;*/
+		background: #5d4955;
+               /* left:33px;*/
+                margin:0;
+		display: none; /* visibility will be toggled with jquery */
+
+	}
+	#nav li {
+		clear: both;
+		float: left;
+		margin: 5px 0 5px 10px;
+	}
+	.sf-sub-indicator{ right: -1.25em!important;top:1.2em!important; /* IE6 only */}
+	#nav-container{ margin-top:5px!important}
+	#nav a, 
+	#nav ul a {
+		font: inherit;
+		background: none;
+		display: inline;
+		padding: 10px!important;
+		color: #fff;
+		border: none;
+                font-size:10px;
+	}
+	/* dropdown */
+	#nav ul {
+		width: auto;
+		position: static;
+		display: block;
+		border: none;
+		background: inherit;
+	}
+	#nav ul li {
+		margin: 3px 0 3px 15px;
+	}
+	
+	.sf-menu li:hover, .sf-menu li.sfHover,
+	.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:		none!important;
+	outline:		0;
+	}
+	.sf-menu li li, .sf-menu li li li {
+	background:		none!important;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	/* ensure #nav is visible on desktop version */
+	#nav {
+		display: block !important;
+	}
+
+}

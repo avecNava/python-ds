@@ -1,0 +1,52 @@
+/* 
+* Scroll top link inside footer, 
+* but fixed relative to viewport
+*/
+#scroll-top {
+	position:fixed; 
+	/* On top of everything */
+	z-index:9999; 
+	bottom:0;
+	right:0;
+	margin:0.9em;
+	display:inline-block;
+	padding:0.15em 0.5em;
+	border-radius:3px;
+	color:#fafafa;
+	text-decoration:none;
+	border:1px solid transparent;
+	background:#39b5e9;
+	letter-spacing:1px;
+	text-transform:uppercase;
+}
+
+/* 
+* Up Arrow for the scroll top link 
+*/
+#scroll-top:after {
+	content:"";
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:0.35em;
+	width: 0;
+	height: 0;
+	border-left: 0.3em solid transparent;
+	border-right:  0.3em solid transparent;
+	border-bottom:  0.3em solid #fefefe;
+}
+
+
+/* 
+* When the viewport is 55em 
+* (15em wider than the 40em 
+* max-width for #content ) 
+* it gets a static postion to not 
+* overlap the content area 
+*/
+@media screen and (max-width: 55em) {
+	 #scroll-top {
+		float:right;
+		position:static;
+		margin:0;
+	}
+}
