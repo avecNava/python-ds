@@ -48,6 +48,7 @@ class TodayPriceItem(scrapy.Item):
 
 class NewWebStockPriceItem(scrapy.Item):
     symbol = scrapy.Field()
+    company = scrapy.Field()
     open_price = scrapy.Field()
     high_price = scrapy.Field()
     low_price = scrapy.Field()

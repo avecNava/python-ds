@@ -59,7 +59,7 @@ class NewwebSpider(scrapy.Spider):
         #set page number to 500
         select_element = self.driver.find_element_by_css_selector(".box__filter--wrap select")
         select_object = Select(select_element)
-        select_object.select_by_value('10')
+        select_object.select_by_value('500')
 
         #find filter button and click
         self.driver.find_element_by_css_selector(".box__filter--wrap button").click()
@@ -73,7 +73,9 @@ class NewwebSpider(scrapy.Spider):
             writer = csv.writer(f)
 
             for row in rows:
-                symbol = row.find_element_by_css_selector("td:nth-child(2) > a").text
+                company = row.find_element_by_css_selector("td:nth-child(2) > a")
+                symbol = company.text
+                company_name = company.get_attribute('title')
                 price_close = row.find_element_by_css_selector("td:nth-child(3)").text.replace(',','')
                 price_open = row.find_element_by_css_selector("td:nth-child(4)").text.replace(',','')
                 price_high = row.find_element_by_css_selector("td:nth-child(5)").text.replace(',','')
@@ -94,6 +96,7 @@ class NewwebSpider(scrapy.Spider):
 
                 # add to item
                 item['symbol'] = symbol
+                item['company'] = company_name
                 item['open_price'] = price_open
                 item['high_price'] = price_high
                 item['low_price'] = price_low

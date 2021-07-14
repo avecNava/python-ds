@@ -33,7 +33,7 @@ class StocklivePipeline(object):
             host = "192.168.10.10",
             user = "homestead",
             passwd = "secret",
-            database = "homestead",
+            database = "nepse2021",
             # charset = "utf-8",
             use_unicode = True
         )        
@@ -114,12 +114,14 @@ class NewWebPipeline(object):
             return item
         return item
 
+    '''CRUD operations'''
     def create_record(self, item):    
       
         #symbol and transaction_date have UNIQUE key in the schema
         # https://dev.mysql.com/doc/refman/8.0/en/insert-on-duplicate.html
         data = {            
             'symbol' : item['symbol'],
+            'company' : item['company'],
             'open_price' : item['open_price'],
             'high_price' : item['high_price'],
             'low_price' : item['low_price'],
@@ -139,6 +141,15 @@ class NewWebPipeline(object):
             'created_at' : item['created_at'],
         }
 
+        self.create_or_update_stock_prices(data)
+        self.reset_latest_flag(data)
+        self.create_or_update_company(data)
+    
+    '''
+        creates new record or updates existing record based on unique key.
+        table `stock_prices` has combined unique key constraint (symbol, transaction_date)
+    '''
+    def create_or_update_stock_prices(self,data):
         sql = """INSERT INTO stock_prices (`symbol`, `open_price`, `high_price`, `low_price`, `close_price`, `last_updated_price`, 
             `previous_day_close_price`, `total_traded_qty`, `total_traded_value`, `total_trades`, `avg_traded_price`, 
             `fifty_two_week_high_price`,`fifty_two_week_low_price`,`last_updated_time`,`transaction_date`,`latest`,`source`,`created_at`)
@@ -149,11 +160,29 @@ class NewWebPipeline(object):
             `high_price`={high_price},`low_price`={low_price},`close_price`={close_price},`last_updated_price`={last_updated_price}, 
             `previous_day_close_price`={previous_day_close_price},`total_traded_qty`={total_traded_qty},`total_traded_value`={total_traded_value},
             `total_trades`={total_trades},`avg_traded_price`={avg_traded_price},`fifty_two_week_high_price`={fifty_two_week_high_price},
-            `fifty_two_week_low_price`={fifty_two_week_low_price},`last_updated_time`='{last_updated_time}',`source`='{source}',`updated_at`='{created_at}'
+            `fifty_two_week_low_price`={fifty_two_week_low_price},`last_updated_time`='{last_updated_time}',`source`='{source}',`updated_at`='{last_updated_time}'
             """
         # print(sql.replace('\n','').format_map(data))
         self.cursor.execute(sql.replace('\n','').format_map(data))
-        
+    
+    '''reset latest flag to 0 for earlier records'''
+    def reset_latest_flag(self, data):
+        sql = """
+            UPDATE stock_prices SET latest = 0 WHERE symbol = '{symbol}' AND transaction_date < '{transaction_date}'
+        """
+        self.cursor.execute(sql.replace('\n','').format_map(data))
+
+    '''
+        create or update company
+        Normally INSERT stops and rolls back when it encounters an error. 
+        By using the IGNORE keyword all errors are converted to warnings, which will not stop inserts of additional rows.
+        https://mariadb.com/kb/en/insert-ignore/
+    '''
+    def create_or_update_company(self, data):
+        sql = "INSERT IGNORE INTO stocks (`symbol`,`security_name`,`created_at`) VALUES ('{symbol}','{company}','{created_at}')"
+        self.cursor.execute(sql.format_map(data))
+
+    '''create table '''
     def create_tables(self):
         self.cursor.execute("""DROP TABLE IF EXISTS stock_prices """)
         self.cursor.execute("""
