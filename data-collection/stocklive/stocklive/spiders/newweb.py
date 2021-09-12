@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import csv
+from scrapy.loader import ItemLoader
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
@@ -9,7 +10,6 @@ from selenium.webdriver.support.select import Select
 # from selenium.webdriver.remote.webelement import WebElement
 import datetime
 from ..items import NewWebStockPriceItem
-
 
 # scrapes data from start_urls (newweb.nepalstock.com.np/today-price) 
 # and dumps inside output folder as a new file with current date as filename
@@ -73,6 +73,14 @@ class NewwebSpider(scrapy.Spider):
             writer = csv.writer(f)
 
             for row in rows:
+
+                # l = ItemLoader(NewWebStockPriceItem(), row)
+                # l.add_xpath('symbol', xpath1) 
+                # l.add_xpath('name', xpath2) 
+                # l.add_css('name', css) 
+                # l.add_value('name', 'test')
+                # return l.load_item() 
+
                 company = row.find_element_by_css_selector("td:nth-child(2) > a")
                 symbol = company.text
                 company_name = company.get_attribute('title')
